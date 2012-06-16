@@ -6,8 +6,8 @@
 
 Summary:	Adaptive Multi Rate speech codec
 Name:		opencore-amr
-Version:	0.1.2
-Release:	%mkrel 4
+Version:	0.1.3
+Release:	1
 License:	Apache License
 Group:		Sound
 Url:		http://opencore-amr.sourceforge.net/
@@ -68,8 +68,10 @@ Google Android project.
 %{_libdir}/pkgconfig/opencore-amrnb.pc
 %{_libdir}/pkgconfig/opencore-amrwb.pc
 
-
 %changelog
+* Sat Jun 16 2012 Andrey Bondrov <andrey.bondrov@rosalab.ru> 0.1.3-1plf
+- New version 0.1.3
+
 * Fri Aug 19 2011 Andrey Bondrov <bondrov@math.dvgu.ru> 0.1.2-4plf2011.0
 - Port from PLF to restricted
 - Little spec clean up
