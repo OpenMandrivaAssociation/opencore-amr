@@ -7,7 +7,7 @@
 Summary:	Adaptive Multi Rate speech codec
 Name:		opencore-amr
 Version:	0.1.3
-Release:	1
+Release:	2
 License:	Apache License
 Group:		Sound
 Url:		http://opencore-amr.sourceforge.net/
@@ -63,7 +63,7 @@ Google Android project.
 
 %files -n %{develname}
 %{_libdir}/libopencore-amr??.so
-%{_libdir}/libopencore-amr??.*a
+%{_libdir}/libopencore-amr??.a
 %{_includedir}/opencore-amr??
 %{_libdir}/pkgconfig/opencore-amrnb.pc
 %{_libdir}/pkgconfig/opencore-amrwb.pc
