@@ -60,7 +60,5 @@ Google Android project.
 
 %files -n %{develname}
 %{_libdir}/libopencore-amr??.so
-%{_libdir}/libopencore-amr??.*a
 %{_includedir}/opencore-amr??
-%{_libdir}/pkgconfig/opencore-amrnb.pc
-%{_libdir}/pkgconfig/opencore-amrwb.pc
+%{_libdir}/pkgconfig/opencore-*.pc
