@@ -7,7 +7,7 @@
 Summary:	Adaptive Multi Rate speech codec
 Name:		opencore-amr
 Version:	0.1.2
-Release:	%mkrel 4
+Release:	5
 License:	Apache License
 Group:		Sound
 Url:		http://opencore-amr.sourceforge.net/
@@ -47,15 +47,12 @@ Google Android project.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
 
 %install
-%__rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-%__rm -rf %{buildroot}
 
 %files -n %{libname}
 %doc README LICENSE
@@ -67,23 +64,3 @@ Google Android project.
 %{_includedir}/opencore-amr??
 %{_libdir}/pkgconfig/opencore-amrnb.pc
 %{_libdir}/pkgconfig/opencore-amrwb.pc
-
-
-%changelog
-* Fri Aug 19 2011 Andrey Bondrov <bondrov@math.dvgu.ru> 0.1.2-4plf2011.0
-- Port from PLF to restricted
-- Little spec clean up
-
-* Wed Dec  2 2009 Götz Waschk <goetz@zarb.org> 0.1.2-1plf2010.1
-- update file list
-- fix build
-- new version
-
-* Mon Jul 20 2009 Götz Waschk <goetz@zarb.org> 0.1.1-1.20090620.1plf2010.0
-- add docs
-- fix build and installation
-- git snapshot
-
-* Mon Jul 20 2009 Götz Waschk <goetz@zarb.org> 0.1.1-1plf2010.0
-- initial package
-
