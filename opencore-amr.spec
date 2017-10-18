@@ -6,8 +6,8 @@
 
 Summary:	Adaptive Multi Rate speech codec
 Name:		opencore-amr
-Version:	0.1.3
-Release:	2
+Version:	0.1.5
+Release:	1
 License:	Apache License
 Group:		Sound
 Url:		http://opencore-amr.sourceforge.net/
