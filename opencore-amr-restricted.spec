@@ -48,10 +48,10 @@ Google Android project.
 
 %build
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 
 %files -n %{libname}
