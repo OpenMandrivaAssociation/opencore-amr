@@ -1,13 +1,12 @@
-%define distsuffix plf
-
 %define major 0
-%define libname %mklibname %{name} %{major}
+%define oldlibname %mklibname %{name} 0
+%define libname %mklibname %{name}
 %define develname %mklibname -d %{name}
 
 Summary:	Adaptive Multi Rate speech codec
 Name:		opencore-amr
 Version:	0.1.6
-Release:	1
+Release:	2
 License:	Apache License
 Group:		Sound
 Url:		http://opencore-amr.sourceforge.net/
@@ -19,11 +18,10 @@ specification for the Adaptive Multi Rate (AMR) speech codec. The
 implementation is derived from the OpenCORE framework, part of the
 Google Android project.
 
-This package is in restricted for patent reasons.
-
 %package -n %{libname}
 Group:		System/Libraries
 Summary:	Adaptive Multi Rate speech codec
+%rename %{oldlibname}
 
 %description -n %{libname}
 This library contains an implementation of the 3GPP TS 26.073
@@ -44,15 +42,14 @@ implementation is derived from the OpenCORE framework, part of the
 Google Android project.
 
 %prep
-%setup -q
+%autosetup -p1
+%configure
 
 %build
-%configure
 %make_build
 
 %install
 %make_install
-
 
 %files -n %{libname}
 %doc README LICENSE
