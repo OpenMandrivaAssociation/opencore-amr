@@ -9,7 +9,7 @@ Version:	0.1.6
 Release:	2
 License:	Apache License
 Group:		Sound
-Url:		http://opencore-amr.sourceforge.net/
+Url:		https://opencore-amr.sourceforge.net/
 Source0:	http://sourceforge.net/projects/opencore-amr/files/opencore-amr/%{name}-%{version}.tar.gz
 
 %description
