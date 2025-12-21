@@ -12,6 +12,11 @@ Group:		Sound
 Url:		https://opencore-amr.sourceforge.net/
 Source0:	http://sourceforge.net/projects/opencore-amr/files/opencore-amr/%{name}-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 This library contains an implementation of the 3GPP TS 26.073
 specification for the Adaptive Multi Rate (AMR) speech codec. The
